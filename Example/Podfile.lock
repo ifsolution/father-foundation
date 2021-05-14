@@ -1,0 +1,33 @@
+PODS:
+  - Boardy (1.14.1):
+    - Boardy/Default (= 1.14.1)
+  - Boardy/Attachable (1.14.1):
+    - Boardy/Core
+    - Boardy/DeepLink
+  - Boardy/Core (1.14.1)
+  - Boardy/DeepLink (1.14.1):
+    - Boardy/Core
+  - Boardy/Default (1.14.1):
+    - Boardy/Attachable
+    - Boardy/Core
+  - DadFoundation (0.1.0):
+    - Boardy
+
+DEPENDENCIES:
+  - DadFoundation (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Boardy
+
+EXTERNAL SOURCES:
+  DadFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Boardy: d23f977dfe2551015bad0f5aff260326929cd699
+  DadFoundation: f2489cbb42e1e240c06af5c39c2ced4e84db0155
+
+PODFILE CHECKSUM: d92e4463cad594cb8a43114d32b01a801df87cbd
+
+COCOAPODS: 1.10.1
