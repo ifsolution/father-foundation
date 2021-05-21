@@ -30,4 +30,4 @@ git push origin main
 git push origin $VERSION
 
 # Publish pod to specs repo
-pod repo push father
+pod repo push father --allow-warnings
