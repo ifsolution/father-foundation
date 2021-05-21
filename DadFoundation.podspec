@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "DadFoundation"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
   s.summary = "The definitions and protocols for module basic and integration"
 
   s.description = <<-DESC
