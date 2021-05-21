@@ -16,5 +16,6 @@ pod repo bump $VERSION
 
 git add .
 git commit -m "Bump version to $VERSION"
-git tag -fa $VERSION
-git push orgin main -f --tags
+git tag -f $VERSION
+git push origin :refs/tags/$VERSION
+git push origin main --tags
