@@ -18,4 +18,4 @@ git add .
 git commit -m "Bump version to $VERSION"
 git tag -f $VERSION
 git push origin :refs/tags/$VERSION
-git push origin main --tags
+git push origin --tags
