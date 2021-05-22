@@ -13,6 +13,14 @@ public protocol ModuleContainer {
     func registerBoard(_ factory: @escaping (BoardID) -> ActivatableBoard, with identifier: BoardID)
 }
 
+extension ModuleContainer {
+    public func registerBoard(by producer: ActivableBoardProducer, with identifier: BoardID) {
+        self.registerBoard({ id in
+            producer.produceBoard(identifier: id) ?? NoBoard()
+        }, with: identifier)
+    }
+}
+
 /// For feature module which will be loaded in container.
 public protocol ModuleLoader {
     var identifier: String { get }
