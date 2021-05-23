@@ -52,21 +52,24 @@ protocol SomeExProducer {
 }
 
 struct SomeModuleLoader: ModuleLoader {
-    var identifier: String { id.rawValue }
+    var identifier: BoardID { id }
 
     let id: BoardID
     var exProducer: SomeExProducer
     var exDepsFac: () -> Any
 
     func load(in container: ModuleContainer) {
-        container.registerBoard({ (identifier) -> ActivatableBoard in
-            print("\(identifier)")
-            fatalError()
-        }, with: id)
+        container.registerBoard(id) { (_) -> ActivatableBoard in
+            NoBoard(identifier: id)
+        }
     }
 }
 
 final class ApplicationComponent: MainComponent {
+    func registerBoard(_ identifier: BoardID, producer: @escaping (BoardID) -> ActivatableBoard) {
+        print("App Reg OK")
+    }
+
     var producer: ActivableBoardProducer { container }
 
     var modules: [ModuleLoader] = []
@@ -80,10 +83,6 @@ final class ApplicationComponent: MainComponent {
     }
 
     var container = BoardContainer()
-
-    func registerBoard(_ factory: @escaping (BoardID) -> ActivatableBoard, with identifier: BoardID) {
-        print("App Reg OK")
-    }
 
     private func load() {
         modules.forEach { $0.load(in: self) }
