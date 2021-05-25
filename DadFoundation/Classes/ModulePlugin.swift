@@ -12,7 +12,7 @@ public protocol MainComponent: ModuleContainer {
     /// Main producer
     var producer: ActivableBoardProducer { get }
 
-    func append(module: ModuleLoader)
+//    func append(module: ModuleLoader)
 }
 
 public protocol ModulePlugin {
