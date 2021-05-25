@@ -10,7 +10,7 @@ PODS:
   - Boardy/Default (1.14.1):
     - Boardy/Attachable
     - Boardy/Core
-  - DadFoundation (0.1.1):
+  - DadFoundation (0.2.0):
     - Boardy
 
 DEPENDENCIES:
@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Boardy: d23f977dfe2551015bad0f5aff260326929cd699
-  DadFoundation: af513253d095a483b4a42716f1a4ba8a24931883
+  DadFoundation: be6bd3b1b14e4955aae84b8b6508281d05b07cb2
 
 PODFILE CHECKSUM: d92e4463cad594cb8a43114d32b01a801df87cbd
 
