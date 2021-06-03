@@ -8,11 +8,8 @@
 import Boardy
 import Foundation
 
-public protocol MainComponent: ModuleContainer {
-    /// Main producer
-    var producer: ActivableBoardProducer { get }
-
-//    func append(module: ModuleLoader)
+public protocol MainComponent {
+    var producer: BoardDynamicProducer { get }
 }
 
 public protocol ModulePlugin {
