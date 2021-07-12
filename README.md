@@ -1,15 +1,23 @@
 # DadFoundation
 
-[![CI Status](https://img.shields.io/travis/NGUYEN CHI CONG/DadFoundation.svg?style=flat)](https://travis-ci.org/NGUYEN CHI CONG/DadFoundation)
-[![Version](https://img.shields.io/cocoapods/v/DadFoundation.svg?style=flat)](https://cocoapods.org/pods/DadFoundation)
-[![License](https://img.shields.io/cocoapods/l/DadFoundation.svg?style=flat)](https://cocoapods.org/pods/DadFoundation)
-[![Platform](https://img.shields.io/cocoapods/p/DadFoundation.svg?style=flat)](https://cocoapods.org/pods/DadFoundation)
+Define a good protocol `ModulePlugin` for Modular architecture. A feature module conforms `ModulePlugin` will be easly integrated to `MainComponent` of Application by using [`DadSDK`](https://github.com/ifsolution/father-sdk).
+
+Using `DadFoundation` helps to build a smooth and consistent `Modularization`. By this way you will get benefits from horizontal scalability.
+
+
+<img src="https://i.imgur.com/cckqFgz.jpg"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
++ iOS 10+
++ Swift 5.3+
 
 ## Installation
 
